@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #e8eff5;
+    ;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.processbar__progress {
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    margin: 15px 0;
+    height: auto;
+    width: auto;
+}
+
+.progressbar__done {
+    background: linear-gradient(to left, #1976d2, #1976d2);
+    box-shadow: 0 3px 3px -5px #1976d2, 0 2px 5px #1976d2;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 0;
+    opacity: 0;
+    transition: 1s ease 0.3s;
+}
+
+@media only screen and (min-device-width: 768px) {
+    body {
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-device-width: 580px) {
+    #Image_Section {
+        display: none;
+    }
+    .weather_type {
+        margin-top: 10px;
+    }
+    .weather__status {
+        margin-top: 0px !important;
+    }
+    .display-flex {
+        display: flex !important;
+        justify-content: center !important;
+    }
+    .moreDetailedWeatherData {
+        display: none;
+    }
+}
